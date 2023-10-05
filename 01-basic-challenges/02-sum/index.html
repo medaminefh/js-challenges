@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum</title>
+</head>
+<body>
+    
+    <h2></h2>
+    <input id="firstNumber" type="number" />
+    <input id="secondNumber" type="number" />
+    <button>Calculate</button>
+    <script src="./sum.js"></script>
+    <script>
+        const firstNumber = document.querySelector("#firstNumber")
+        const secondNumber = document.querySelector("#secondNumber")
+        const h2 = document.querySelector("h2")
+        const btn = document.querySelector("button")
+        btn.addEventListener("click",()=> {
+            const total = getSum(Number(firstNumber.value), Number(secondNumber.value))
+            if(isNaN(total)) {
+                h2.innerText = "getSum function not correct!"
+                h2.style.color = "#f00"
+            }
+            else
+            h2.innerText = total
+            h2.style.color = "#000"
+        })
+    </script>
+</body>
+</html>

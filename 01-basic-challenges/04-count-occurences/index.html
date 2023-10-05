@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Occurences</title>
+</head>
+<body>
+    <h2></h2>
+    <textarea rows="6" cols="60">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat, amet alias odit dolorem molestias et magni ex dolore doloremque quae dicta, unde earum dignissimos consectetur deserunt accusantium tempora sint omnis?</textarea>
+    <input maxlength="1" type="text">
+    <button>Count</button>
+    <script src="./count-occurences.js"></script>
+    <script>
+        const h2 = document.querySelector("h2")
+        const text = document.querySelector("textarea")
+        const word = document.querySelector("input")
+        const button = document.querySelector("button")
+        button.addEventListener("click",function(){
+            const total = countOcc(text.value, word.value)
+            h2.innerText = `The <${word.value}> occured ${total} times`
+        })
+    </script>
+</body>
+</html>
