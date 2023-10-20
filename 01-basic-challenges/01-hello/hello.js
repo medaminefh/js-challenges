@@ -1,4 +1,8 @@
 /*
 TODO! complete this helloWorld function to return the string "Hello World!"
 */
-function helloWorld() {}
+function helloWorld() {
+    return "Hello World!"
+
+}
+helloWorld()

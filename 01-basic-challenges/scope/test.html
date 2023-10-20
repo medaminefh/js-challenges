@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+ 
+    var arr = ["10", "20","30", "40","50"]
+//    var array = []
+//    for (element of arr){
+//     array.push(element *10)
+//    }
+//    console.log(array)
+
+// ****************************************************** map
+
+// let myaar = arr.map(function(element){
+//     return element * 10
+// })
+// console.log(myaar)
+
+// ****************************************************** filter
+// let myar = arr.filter(function(element){
+// if (element > 35){
+//     return true
+// } else{
+//     return false
+// }
+// })
+// console.log(myar)
+// ******************************************************* reduce
+ var total = arr.reduce(function(prevValue, currentValue){
+    return prevValue + currentValue
+ })
+ console.log(total)
+</script>
+</html>

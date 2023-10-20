@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="resultats"> </div>
+<script>
+
+
+var tab = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+var numbers2 = [10, 20, 30, 40, 50, 60, 70, 80, 90];
+
+var resultatDiv = document.getElementById('resultats');
+
+ for (let i = 0; i < tab.length; i++) {
+  var resultat = tab[i] * numbers2[i];
+  console.log(resultat)
+ 
+
+   var paragraphe = document.createElement('p');
+   paragraphe.textContent = tab[i] + ' * ' + numbers2[i] + ' = ' + resultat;
+
+  resultatDiv.appendChild(paragraphe);
+}
+</script>
+</body>
+
+</html>
