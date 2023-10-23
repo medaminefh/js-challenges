@@ -9,22 +9,35 @@
 
 </body>
 <script>
-    function a() {
-        let one = "one"
-        return function b() {
-            let two = "two"
-            return function c() {
-                let three = "three"
-                console.log(`${one}, ${two}, ${three}`);
-            }
-        }
-    }
+    // function a() {
+    //     let one = "one"
+    //     return function b() {
+    //         let two = "two"
+    //         return function c() {
+    //             let three = "three"
+    //             console.log(`${one}, ${two}, ${three}`);
+    //         }
+    //     }
+    // }
 
-    const first = (a)
-    const second = first()
-    second()
+    // const first = (a)
+    // const second = first()
+    // second()
+function outer(){
+    var x = 100
 
 
-    
+function inner(){ // closure give you access  to outer function 
+    console.log(x)   
+
+}
+x = 700
+
+//inner() 
+ return inner
+   }
+ //   outer()
+ let y = outer()
+ y()
 </script>
 </html>
