@@ -8,10 +8,10 @@ function fizzBuzzArray(number , any =[]) {
         any.push("fizz")
     } else if( i % 5 === 0){
         any.push("Buzz")
-    } else{
-        any.push(i)
-    }
-
+    } 
+else {
+    any.push(i)
+}
     }
 
 return any

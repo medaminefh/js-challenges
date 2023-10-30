@@ -1,11 +1,13 @@
 function displayLikes(likesArray=[]) {
     const length = likesArray.length
+    console.log(likesArray)
     switch (length) {
-        case 0 :
+        case 0 :                    
            return  'no one likes this'
                   
         case 1 :
           return   ` ${likesArray[0]}likes this`
+          
         case 2:
             return      ` ${likesArray[0]} , ${likesArray[1]} like this}`   
         case 3:
