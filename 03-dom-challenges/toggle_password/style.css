@@ -19,7 +19,14 @@
   margin-left: 10px; /* Ajoutez de la marge à gauche du deuxième bouton */
 }
 
-#signup-button:hover,
+#signup-button:hover{
+ 
+    background-color: white; /* Set the background color to white */
+    color: rgb(109, 195, 237); /* Set the text color to blue */
+    font-weight: bold; /* Example style to make the text bold */
+
+  
+}
 #login-button:hover {
   background-color: rgb(101, 174, 226);
 }
@@ -28,7 +35,7 @@
 
 
 #la {
-  color: gray; /* Sets the text color to gray for the label with id "labl" */
+  color: rgb(161, 159, 159); /* Sets the text color to gray for the label with id "labl" */
 }
 
 #labl {
@@ -60,7 +67,7 @@
   }
   
   #username::placeholder {
-    color: #ada6a6;
+    color: #c7c3c3;
   }
   
   #username:focus {
@@ -76,12 +83,14 @@
 
 
 
-  
+   
   }
   .password-container {
     position: relative;
     width: 250px;
   }
+  #password::placeholder {
+    color: rgb(185, 179, 179); }
   
   #password {
 
