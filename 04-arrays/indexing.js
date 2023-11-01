@@ -27,21 +27,21 @@ console.log(len)
 
 // so i want to have an array with ids like this >>> [3, 4, 5, 6, 7, 17, 18, ....] and so on
 
-// function store() {
-//     var ids = [];
-//     for (let user of users) { 
-//         console.log(users)
-//         if (!ids.includes(user.id)) { 
-//             ids.push(user.id)
-//             console.log(ids)
+ function store() {
+    var ids = [];
+    for (let user of users) { 
+        console.log(users)
+        if (!ids.includes(user.id)) { 
+            ids.push(user.id)
+            console.log(ids)
 
-//         }
-//     }
-//     return ids
-// }
+        }
+    }
+    return ids
+}
 
-// const uniqueIds = store(users.ids)
-// console.log(uniqueIds)
+const uniqueIds = store(users.ids)
+console.log(uniqueIds)
 
 
 
