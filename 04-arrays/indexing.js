@@ -15,10 +15,10 @@ console.log(name)
 //*****************************the type of users is object
 
 // TODO: declare a variable called "len" and store in it how many users are in the users variable
- let len = users
+ let len = users.length
 
 // so when i do console.log(len) i should see a number (how many users are there)
-console.log(users.length)
+console.log(len)
 
 
 
