@@ -27,21 +27,21 @@ console.log(len)
 
 // so i want to have an array with ids like this >>> [3, 4, 5, 6, 7, 17, 18, ....] and so on
 
-function store() {
-    var ids = [];
-    for (let user of users) { 
-        console.log(users)
-        if (!ids.includes(user.id)) { 
-            ids.push(user.id)
-            console.log(ids)
+// function store() {
+//     var ids = [];
+//     for (let user of users) { 
+//         console.log(users)
+//         if (!ids.includes(user.id)) { 
+//             ids.push(user.id)
+//             console.log(ids)
 
-        }
-    }
-    return ids
-}
+//         }
+//     }
+//     return ids
+// }
 
-const uniqueIds = store(users.ids)
-console.log(uniqueIds)
+// const uniqueIds = store(users.ids)
+// console.log(uniqueIds)
 
 
 
@@ -73,9 +73,22 @@ console.log(uniqueIds)
 
 */
 
-const kevinclark = users.find(user => user.login === "kevinclark")
-console.log(kevinclark)
+// const kevinclark = users.find(user => user.login === "kevinclark")
+// console.log(kevinclark)
 
+
+
+
+
+let kevinclark = null // Initialize a variable to store the result
+
+for (let i = 0; i < users.length; i++) {
+  if (users[i].login === "kevinclark") {
+    kevinclark = users[i]
+  }
+}
+
+console.log(kevinclark)
 
 
 // TODO: declare a variable called "photos" and store in it the users "avatar_url" only, so when i do console.log(photos) i get this >>>
@@ -96,7 +109,15 @@ console.log(kevinclark)
 
 
 */ 
-const photos = users.map(user => user.avatar_url)
+// const photos = users.map(user => user.avatar_url)
+// console.log(photos)
+
+const photos = []
+
+for (let i = 0; i < users.length; i++) {
+  photos.push(users[i].avatar_url)
+}
+
 console.log(photos)
 
 // TODO: declare a variable called "minUsers" store in it all users but with these properties only (id, avatar_url, login)
@@ -126,9 +147,22 @@ console.log(photos)
 ]
 
 */
-const minUsers = users.map(user => 
-    ({id: user.id,
-        avatar_url: user.avatar_url,
-        login: user.login}))
+// const minUsers = users.map(user => 
+//     ({id: user.id,
+//         avatar_url: user.avatar_url,
+//         login: user.login}))
+
+// console.log(minUsers)
+const minUsers = []
+
+for (let i = 0; i < users.length; i++) {
+  const user = users[i]
+  const newUser = {
+    id: user.id,
+    avatar_url: user.avatar_url,
+    login: user.login
+  };
+  minUsers.push(newUser)
+}
 
 console.log(minUsers)
