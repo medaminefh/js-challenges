@@ -2,29 +2,52 @@ import users from "./users.json" assert {type: 'json'}
 
 // consider this array of names
 const names = ["Mohamed amine", "Haroun", "Amira", "faten", "farah"]
-
 // TODO: declare a variable "name" and store in it the str "Amira" from the names array above
-// so when i do console.log(name) this will shows "Amira" in the console
+var name = names[2]
 
+// so when i do console.log(name) this will shows "Amira" in the console
+console.log(name)
 
 
 // consider the users above,(you can open the file "./users.json" to see what that users has)
 // what is the type of users?
+
+//*****************************the type of users is object
+
 // TODO: declare a variable called "len" and store in it how many users are in the users variable
+ let len = users
 
 // so when i do console.log(len) i should see a number (how many users are there)
-
+console.log(users.length)
 
 
 
 
 // TODO: from the users variable, i want you to store the ids of the users in a variable called "ids"
+
 // so i want to have an array with ids like this >>> [3, 4, 5, 6, 7, 17, 18, ....] and so on
 
+function store() {
+    var ids = [];
+    for (let user of users) { 
+        console.log(users)
+        if (!ids.includes(user.id)) { 
+            ids.push(user.id)
+            console.log(ids)
+
+        }
+    }
+    return ids
+}
+
+const uniqueIds = store(users.ids)
+console.log(uniqueIds)
 
 
 
 // TODO: declare a variable called "kevinclark" and store in it the user that has a login property "kevinclark"
+
+
 // so i should get this when i do console.log(kevinclark) >>>  
 /* 
 {
@@ -50,6 +73,10 @@ const names = ["Mohamed amine", "Haroun", "Amira", "faten", "farah"]
 
 */
 
+const kevinclark = users.find(user => user.login === "kevinclark")
+console.log(kevinclark)
+
+
 
 // TODO: declare a variable called "photos" and store in it the users "avatar_url" only, so when i do console.log(photos) i get this >>>
 /* 
@@ -68,7 +95,9 @@ const names = ["Mohamed amine", "Haroun", "Amira", "faten", "farah"]
 ]
 
 
-*/
+*/ 
+const photos = users.map(user => user.avatar_url)
+console.log(photos)
 
 // TODO: declare a variable called "minUsers" store in it all users but with these properties only (id, avatar_url, login)
 // So when i do console.log(minUsers) this will shows >>>
@@ -96,5 +125,10 @@ const names = ["Mohamed amine", "Haroun", "Amira", "faten", "farah"]
     .
 ]
 
-
 */
+const minUsers = users.map(user => 
+    ({id: user.id,
+        avatar_url: user.avatar_url,
+        login: user.login}))
+
+console.log(minUsers)
