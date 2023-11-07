@@ -30,7 +30,7 @@ console.log(len)
  function store() {
     var ids = [];
     for (let user of users) { 
-        console.log(users)
+    
         if (!ids.includes(user.id)) { 
             ids.push(user.id)
             console.log(ids)
