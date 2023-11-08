@@ -1,7 +1,12 @@
 /* Light Mode */
 body {
-	background-color: #f8f8f8;
-	color: #333;
+
+
+
+		background-image: url('background.jpg');
+		background-size:  100% 250%; /* Adjust the size of the background image */
+		background-repeat: no-repeat; /* Prevent the background image from repeating */
+	
   }
   
   /* Position the toggle container to the top right */
@@ -40,7 +45,7 @@ body, ul {
 	color: white;
 	font-weight: bold;
   }
-  
+ 
   /* Center the <h1> element horizontally using text-align */
 header {
 	text-align: center;
@@ -94,10 +99,11 @@ header {
 	transition: 0.4s;
 	border-radius: 50%;
   }
+
   
   /* Dark Mode Toggle Styles */
   input:checked + .slider.round {
-	background-color: #2196F3;
+	background-color: #0a0a0a;
   }
   
   input:checked + .slider.round:before {
@@ -107,6 +113,57 @@ header {
   /* Icon Styles */
   .fas {
 	font-size: 24px;
-	color: #f8f8f8;
+	color: #37075f;
   }
+  h1 {
+    color: #040404; /* Text color for heading elements */
+}
+
+p {
+    font-size: 16px; /* Adjust the font size for paragraphs */
+    line-height: 1.5; /* Adjust the line height for paragraphs */
+}
+/* Footer styles */
+footer {
+	background-color:  #049a6b;
+	color: #090a0a;
+	padding: 20px;
+	text-align: center;
+	position: fixed; /* Make the footer fixed at the bottom */
+	bottom: 0; /* Stick it to the bottom of the viewport */
+	width: 100%; /* Full width of the viewport */
+  }
+  
+  .footer-content {
+	max-width: 1200px;
+	margin: 0 auto;
+  }
+  
+  .footer-content p {
+	margin: 0;
+  }
+  
+  .footer-content ul {
+	list-style: none;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+  }
+  
+  .footer-content li {
+	margin: 0 10px;
+  }
+  
+  .footer-content a {
+	text-decoration: none;
+	color: #fdf6f9;
+  }
+  
+  /* Example styling for links in the footer */
+  footer a:hover {
+	text-decoration: underline;
+  }
+  
+  
+ 
   
