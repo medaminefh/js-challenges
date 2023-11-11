@@ -1,0 +1,29 @@
+table {
+    border-collapse: collapse;
+    width: 500px;
+    height: 500px;
+    margin: auto;
+}
+td{
+    border: 1px solid black;
+    text-align: center;
+    vertical-align: middle;
+}
+caption{
+    margin: 20px 0px;
+}
+.red {
+    background-color: red;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.green {
+    background-color: green;
+}
