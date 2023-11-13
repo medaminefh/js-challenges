@@ -9,15 +9,20 @@
 <body>
     <div class="center-div">
         <h1>Log in to Designer News</h1>
-        <label for="name" id="la"> Username</label> <br> 
-        <input type="text" id="username" placeholder="username">
+        <label for="username" id="la"> Username</label> <br> 
+        <input type="text" id="username" placeholder="username"><br> <br>
+        <span>Enter Username</span>
+
       
 <br><br>
-
+<form id="login-form">
 <div class="password-container">
-    <label for="name" id="labl">Password </label> <br> 
+    <label for="password" id="labl">Password </label> <br> 
 
-    <input type="password" id="password" placeholder="Password">
+    <input type="password" id="password" placeholder="Password" autocomplete="new-password"> <br> <br>
+
+    <span >Enter your Password</span>
+
 
     <img src="eye-close.png" id="toggle-password" class="toggle-password" alt="Toggle Password Visibility">
 
@@ -25,12 +30,12 @@
   <br> <br>
   
    <div id="btn">
-        <button class="blue-square-button" id="signup-button">SIGN UP</button>
+        <button class="blue-square-button" type="sign up" id="signup-button">SIGN UP</button>
 
         <button class="blue-square-button" id="login-button">LOG IN</button>
     </div>
     </div>
-      
+</form>
     <script src="./script.js"></script>
 </body>
 </html>

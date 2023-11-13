@@ -33,7 +33,6 @@
 
 
 
-
 #la {
   color: rgb(161, 159, 159); /* Sets the text color to gray for the label with id "labl" */
 }
@@ -115,9 +114,13 @@
     height: 25px;
   }
   
+
   
-  
-  
-  
+  span {
+    font-size: 13px;
+    color:red;
+    margin-left:5px;
+    display: none; 
+}
  
   
