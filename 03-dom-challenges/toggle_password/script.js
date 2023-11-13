@@ -2,7 +2,7 @@
 const passwordInput = document.getElementById('password');
 const toggleButton = document.getElementById('toggle-password');
 const spans = document.querySelectorAll("span");
-const form = document.querySelector("login-form"); // Corrected the form selector
+const form = document.getElementById("login-form"); // Corrected the form selector
 
 let isPasswordVisible = false;
 
@@ -31,14 +31,14 @@ form.addEventListener("submit", function (event) { // Changed to "submit" event
   if (fname.value.length > 15 || fname.value.length === 0) {
     isVerified = false;
     const spanError = fname.nextElementSibling;
-    spanError.style.display = "inline";
+    spanError.style.display = "block";
     spanError.innerText = "The username is too long or is empty";
   }
 
   if (password.value.length > 10 || password.value.length === 0) {
     isVerified = false;
     const spanError = password.nextElementSibling;
-    spanError.style.display = "inline";
+    spanError.style.display = "block";
     spanError.innerText = "The password is too long or is empty";
   }
 
