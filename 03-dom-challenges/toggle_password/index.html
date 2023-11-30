@@ -3,11 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Toggle password</title>
 </head>
 <body>
-    
+    <div class="center-div">
 
+    <form id="login-form">
+        <h1>Log in to Designer News</h1>
+        <label for="username" id="la"> Username</label> <br> 
+        <input type="text" id="username" placeholder="username">
+        <span>Enter Username</span>
+
+
+
+<div class="password-container">
+    <label for="password" id="labl">Password </label> <br>
+
+    <input type="password" id="password" placeholder="Password" autocomplete="new-password"> 
+
+    <span >Enter your Password</span>
+
+
+    <img src="eye-close.png" id="toggle-password" class="toggle-password" alt="Toggle Password Visibility">
+
+  </div>
+  <br> <br>
+  
+   <div id="btn">
+        <button class="blue-square-button" type="submit" id="signup-button">SIGN UP</button>
+
+        <button class="blue-square-button" id="login-button">LOG IN</button>
+    </div>
+    </div>
+</form>
     <script src="./script.js"></script>
 </body>
 </html>

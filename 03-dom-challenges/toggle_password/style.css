@@ -1,0 +1,126 @@
+
+#btn {
+  text-align: center; /* Pour centrer les boutons horizontalement */
+}
+
+.blue-square-button {
+  width: 100px;
+  height: 50px;
+  background-color: rgb(19, 166, 229);
+  color: white;
+  border: none;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  margin-right: 80px; /* Ajoutez de la marge à droite du premier bouton */
+}
+
+#login-button {
+  margin-left: 10px; /* Ajoutez de la marge à gauche du deuxième bouton */
+}
+
+#signup-button:hover{
+ 
+    background-color: white; /* Set the background color to white */
+    color: rgb(109, 195, 237); /* Set the text color to blue */
+    font-weight: bold; /* Example style to make the text bold */
+
+  
+}
+#login-button:hover {
+  background-color: rgb(101, 174, 226);
+}
+
+
+
+#la {
+  color: rgb(161, 159, 159); /* Sets the text color to gray for the label with id "labl" */
+}
+
+#labl {
+  /* Your CSS styles for the label with id "labl" go here */
+  color: rgb(69, 149, 219); /* Example color style */
+  font-weight: bold; /* Example style to make the text bold */
+  /* Add other styles as needed */
+}
+
+
+
+ 
+  
+  .blue-square-button:hover {
+    background-color: rgb(103, 175, 238); /* Change the background color on hover */
+  }
+  
+  #username {
+    width: 70%; /* Set the width as needed */
+    padding: 5px 0; /* Add padding at the top and bottom to control the height */
+    border: none; /* Remove the default input border */
+    border-bottom: 2.5px solid #57baef; /* Add a 1px solid black bottom border */
+    outline: none; /* Remove the outline when focused */
+    font-weight: bold; /* Rend le texte en gras */
+    font-size: 18px; /* Ajustez la taille du texte selon vos besoins */
+
+
+
+  }
+  
+  #username::placeholder {
+    color: #c7c3c3;
+  }
+  
+  #username:focus {
+    border: 1px solid #7bade2; /* Change border color on focus */
+  }
+  
+
+  .center-div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+
+   
+  }
+  .password-container {
+    position: relative;
+    width: 250px;
+  }
+  #password::placeholder {
+    color: rgb(185, 179, 179); }
+  
+  #password {
+
+    width: 106%; /* Set the width as needed */
+    padding: 5px 0; /* Add padding at the top and bottom to control the height */
+    border: none; /* Remove the default input border */
+    border-bottom: 2.5px solid #57baef; /* Add a 1px solid black bottom border */
+    outline: none; /* Remove the outline when focused */
+    font-weight: bold; /* Rend le texte en gras */
+    font-size: 18px; /* Ajustez la taille du texte selon vos besoins */
+
+
+  }
+  
+  .toggle-password {
+    position: absolute;
+    top: 60%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+  }
+  
+
+  
+  span {
+    font-size: 13px;
+    color:red;
+    margin-left:5px;
+    display: none; 
+}
+ 
+  

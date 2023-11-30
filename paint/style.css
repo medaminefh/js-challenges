@@ -1,7 +1,7 @@
 h1 {
     text-align:center;
     font-size: 50px;
-    background: -webkit-linear-gradient(#2B3499, #61A3BA);
+    background: -webkit-linear-gradient(#4752cc, #c19be0);
     -webkit-background-clip: text;
     color: transparent;
 }
@@ -19,7 +19,7 @@ h1 {
     grid-template-columns: repeat(10, 1fr);
 }
 
-.moraba3 {
+.square {
     width: 50px;
     height: 50px;
     border:1px solid #333;
